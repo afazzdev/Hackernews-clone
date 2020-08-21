@@ -5,7 +5,9 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "start": "nodemon src/index.ts",
+    "start": "node dist/index.js",
+    "build": "tsc -p .",
+    "start:dev": "nodemon src/index.ts",
     "migrateAll": "npx prisma migrate save --experimental && npx prisma migrate up --experimental && npx prisma generate"
   },
   "dependencies": {
