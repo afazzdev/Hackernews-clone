@@ -6,5 +6,10 @@
   ],
   "devDependencies": {
     "lerna": "^3.22.1"
+  },
+  "scripts": {
+    "start": "lerna run start",
+    "build": "lerna run build",
+    "watch": "lerna run watch"
   }
 }
