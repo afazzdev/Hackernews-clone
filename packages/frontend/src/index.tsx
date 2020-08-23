@@ -12,7 +12,9 @@ import { InMemoryCache } from "apollo-cache-inmemory";
 
 // 2
 const httpLink = createHttpLink({
-  uri: "http://localhost:4000",
+  uri: process.env.REACT_APP_ENDPOINT
+    ? process.env.REACT_APP_ENDPOINT
+    : "http://localhost:4000",
 });
 
 // 3
