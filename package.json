@@ -10,6 +10,7 @@
   "scripts": {
     "start": "lerna run start",
     "build": "lerna run build",
-    "watch": "lerna run watch"
+    "watch": "lerna run watch",
+    "publish": "lerna publish"
   }
 }
