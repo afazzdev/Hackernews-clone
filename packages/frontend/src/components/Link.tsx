@@ -1,6 +1,10 @@
 import React from "react";
 
-const Link = (props: ILink) => {
+export interface LinkProps {
+  link: { url: string; description: string };
+}
+
+const Link = (props: LinkProps) => {
   return (
     <div>
       <div>
